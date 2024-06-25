@@ -1,0 +1,17 @@
+{% extends "moza/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<div class="jumbotron">
+	<div class="container">
+  <h1 class="display-4">Hello Everyone...!!!</h1>
+  <p class="lead">Hello Everyone,Welcome to my Website... I'm VD!!!.</p>
+  <img src="{% static 'moza/images/me.jpg' %}" width="200" height="250">
+  <hr class="my-4">
+  <p>I'm your fashion advisor...!!!</p>
+  <a class="btn btn-primary btn-lg" href="/contact" role="button">Contact me!</a>
+  <br>
+  <br>
+</div>
+{% endblock %}

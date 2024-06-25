@@ -1,0 +1,38 @@
+{% extends "moza/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<div class="jumbotron">
+		<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-4">
+    	<div class="card" style="width: 18rem;">
+          <div class="card-body">
+          <h5 class="card-title">Contact me</h5>
+
+          <p><a href="https://www.instagram.com/dharshini_5_6_7/" class="btn btn-primary">Instagram</a></p>
+          <p><a href="#" class="btn btn-primary">Github</a></p>
+          <p><a href="#" class="btn btn-primary">E-Mail</a></p>
+          <p><a href="#" class="btn btn-primary">Linked In</a></p>
+          <p>Phone no:7397659813</p>
+   </div>
+</div>
+    </div>
+    <div class="col-sm-6">
+    	<div class="card">
+           <div class="card-body">
+           <h5 class="card-title"><b>Send me a Message !</b></h5>
+           
+           <form method="post" action="/contact/">
+            {% csrf_token %}
+           {{form.as_p}}
+           <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+        </div>
+   </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
